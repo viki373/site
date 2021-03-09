@@ -1,0 +1,220 @@
+:root{
+    --color-warning: #f28c00;
+    --color-white: #fff;
+    --color-link: #aaa;
+    --color-blue: #004b9a;
+}
+/*common*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+
+.link {
+    text-transform: uppercase;
+    color: var(--color-link, #aaa);
+}
+.link:hover {
+    color:var(--color-warning,#f28c00);
+    list-style: none;
+}
+
+@media (min-width: 992px) {
+    .hide {
+        display: block;
+    }
+    .link {
+        font-size: 14px;
+    }
+}
+img {
+    width: 100%;
+    height: 100%; 
+}
+.carousel-item {
+    max-height: 394px;  
+}
+.hide {
+    display: none;
+}
+/*mobile-menu*/
+.hamburger {
+    width: 50px;
+    height: 50px;
+}
+.menu {
+    display: none;
+    
+}
+.close {
+    display: none;
+}
+.active {
+    display: block;
+}
+.line_link {
+    padding: 5px;
+
+}
+.line_link:hover {
+    background-color: var(--color-warning,#f28c00);
+    color: var(--color-white, #fff);
+}
+
+/*header*/
+.slider_text {
+    background-color: var(--color-white, #ffffff);
+    padding: 16px;
+    margin: 0;
+} 
+.slider_text::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-width: 90px 40px 0 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    left: -38px;
+    bottom: 0;
+}
+.slider_header {
+    background-color: var(--color-warning,#f28c00);  
+}
+.slider_header::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 48px 23px 0px 0px;
+    border-style: solid;
+    border-color: transparent var(--color-warning, #f28c00) transparent transparent;
+    position: absolute;
+    left: -7px;
+    top: 36px;
+}
+.slider_header::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 24px 24px 0px 36px;
+    border-style: solid;
+    border-color: #b96a00  transparent transparent transparent;
+    position: absolute;
+    left: -7px;
+    top: 83px;
+}
+.carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 28%;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.enter{
+    width: 115px;
+    height: 34px;
+}
+.text_input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-link, #aaa);
+    border-radius: 5px;
+    color: var(--color-link, #aaa);
+}
+.icons {
+    width: 25px;
+    height: 25px;
+}
+@media (min-width: 576px) {
+    
+}
+@media (min-width: 768px) {
+    .slider_text::before {
+        border-width: 62px 40px 0 0;
+        left: -39px;
+        bottom: 0;
+    }
+    .slider_header {
+        font-size: 18px;
+    }
+    .slider_header::before{
+        border-width: 21px 13px 0px 0px;
+        left: 3px;
+        top: 36px;
+    }
+    .slider_header::after {
+        border-width: 14px 14px 0px 16px;
+        left: 3px;
+        top: 57px;
+    }
+}
+@media (min-width: 992px) {
+    .menu-hide {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+} 
+@media (min-width: 1200px) {
+    .slide-img {
+        margin-top: -200px;
+    }
+    .slider_header {
+        font-size: 28px;
+        padding: 5px;
+    }
+    .slider_text::before {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-width: 83px 38px 0 0;
+        border-style: solid;
+        border-color: transparent #fff transparent transparent;
+        position: absolute;
+        left: -38px;
+        bottom: 0;
+    }
+    .slider_header::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-width: 43px 20px 0px 0px;
+        border-style: solid;
+        border-color: transparent var(--color-warning, #f28c00) transparent transparent;
+        position: absolute;
+        left: -4px;
+        top: 36px;
+    }
+    .slider_header::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-width: 24px 20px 0px 26px;
+        border-style: solid;
+        border-color: #b96a00  transparent transparent transparent;
+        position: absolute;
+        left: -4px;
+        top: 79px;
+    }
+    
+}
+/*main*/
+main {
+    padding: 0 15px;
+}
+.cart-img {
+    max-width: 600px;
+}
+.main-enter {
+    max-width: 900px;
+}
